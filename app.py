@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import jwt
 
 app = Flask(__name__)
-CORS(app) # Allow all domains for production
+CORS(app, origins=["http://localhost:5173"])
 SECRET_KEY = "safecamp-secret-key-2024"
 DB_PATH = "safecamp.db"
 
